@@ -27,13 +27,13 @@
         </encoder>
     </appender>
 
-    <logger name="com.ps.service" level="DEBUG"/>
-    <logger name="com.ps.util" level="INFO"/>
-    <logger name="org.springframework" level="ERROR"/>
-    <logger name="springfox.documentation" level="ERROR"/>
-    <logger name="org.apache" level="ERROR"/>
-    <logger name="com.zaxxer" level="ERROR"/>
-    <logger name="org.hibernate" level="ERROR"/>
+    <logger name="com.ps.service" level="${log-level:-DEBUG}"/>
+    <logger name="com.ps.util" level="${log-level:-INFO}"/>
+    <logger name="org.springframework" level="${log-level:-ERROR}"/>
+    <logger name="springfox.documentation" level="${log-level:-ERROR}"/>
+    <logger name="org.apache" level="${log-level:-ERROR}"/>
+    <logger name="com.zaxxer" level="${log-level:-ERROR}"/>
+    <logger name="org.hibernate" level="${log-level:-ERROR}"/>
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
